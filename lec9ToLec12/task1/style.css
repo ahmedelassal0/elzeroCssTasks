@@ -1,0 +1,19 @@
+div {
+    display: inline-block;
+    outline: 5px black solid;
+    margin: 0 15px;
+}
+
+div:first-child {
+    border: 5px solid red;
+}
+
+div:nth-child(2) {
+    border: 5px solid;
+    border-color: blue green;
+}
+
+div:nth-child(3) {
+   border: 5px dashed;
+   border-color: red green blue yellow; 
+}
