@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.main {
+    background-color: #EEE;
+    padding: 20px;
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "osama osama ahmed shady"
+        "mohamed mahmoud mahmoud shady"
+        "mohamed ezz ezz shady"
+        "mohamedSa ibrahim gamal eman";
+    gap: 10px;
+}
+
+.main div {
+    padding: 10px;
+    border-bottom: 1px solid orangered;
+}
+
+.main div .name {
+    font-size: 20px;
+}
+
+.main div .job {
+    font-size: 14px;
+    color: gray;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main div .main-p {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main div .secondary-p {
+    font-size: 10px;
+}
+.one, .two, .four, .six, .seven, .nine, .ten {
+    color: #232323;
+    background-color: white;
+}
+
+.three,
+.five,
+.eight {
+    color: white;
+    background-color: #232323;
+}
+
+.one {
+    grid-area: osama;
+}
+
+.two {
+    grid-area: ahmed;
+}
+
+.three {
+    grid-area: shady;
+}
+
+.four {
+    grid-area: mohamed;
+}
+
+.five {
+    grid-area: mahmoud;
+}
+
+.six {
+    grid-area: ezz;
+}
+
+.seven {
+    grid-area: mohamedSa;
+}
+
+.eight {
+    grid-area: ibrahim;
+}
+
+.nine {
+    grid-area: gamal;
+}
+
+.ten {
+    grid-area: eman;
+}

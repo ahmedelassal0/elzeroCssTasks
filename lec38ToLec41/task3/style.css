@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 550px;
+    font-family: sans-serif;
+    margin: auto;
+    position: relative;
+}
+
+.main .card {
+    padding: 10px;
+    background-color: #EEE;
+    display: inline-block;
+    width: 250px;
+    height: 270px;
+}
+
+.main .card .plan {
+    display: block;
+    background-color: #03A9F4;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.main .card .price {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: #DDD;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 150px; 
+    font-weight: 700;
+}
+
+.or {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    color: #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #03A9F4;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 700;
+    left: 260px;
+    top: 120px;
+}
+
+.main .card:first-child {
+    margin-right: 45px;
+    position: relative;
+}
+
+.main .card:first-child::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #03A9F4;
+    position: absolute;
+    top: 0;
+    right: -25px;
+}

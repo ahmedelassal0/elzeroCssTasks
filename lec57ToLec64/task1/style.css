@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 50px auto;
+  gap: 10px;
+}
+
+.grid div {
+    background-color: #607D8B;
+    counter-increment: count;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid div::before {
+    content: "Element " counter(count);
+    color: white;
+    font-weight: 700;
+}

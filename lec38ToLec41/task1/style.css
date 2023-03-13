@@ -1,0 +1,36 @@
+div {
+    font-family: sans-serif;
+    margin: 50px;
+    background-color: #EEEEEE;
+    width: 100px;
+    height: 100px;
+    counter-increment: c;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-shadow: -7px -7px 0 #e91e63,
+                7px 7px 0 #2196F3;
+}
+
+div::after {
+    content: counter(c);
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding: 5px;
+    background-color: black;
+    color: #FFF;
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

@@ -1,0 +1,43 @@
+html {
+    font-family: sans-serif;
+}
+.parent {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #EEE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.parent div {
+    width: calc(450px / 4);
+    height: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent .one {
+    background-color: #FF9800;
+    order: 2;
+}
+
+.parent .two {
+    background-color: #8BC34A;
+    order: 3;
+    align-self: flex-end;
+}
+
+.parent .three {
+    background-color: #795548;
+    order: 4;
+}
+
+.parent .four {
+    background-color: #673AB7;
+    order: 1;
+    align-self: flex-end;
+}

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: #607D8B;
+    border-bottom: 5px solid black;
+}
+
+div::before {
+    content: "Elzero";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-family: sans-serif;
+}
+
+div::after {
+    box-sizing: border-box;
+    content: "";
+    width: 141.4213px;
+    height: 141.4213px;
+    position: absolute;
+    top: -141.4213px;
+    left: 0;
+    background-color: black;
+    transform-origin: left bottom;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+}

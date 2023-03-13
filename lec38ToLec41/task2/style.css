@@ -1,0 +1,17 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+div {
+    height: 100px;
+    width: 100px;
+    background-color: #EFEFEF;
+    border-top-left-radius: 10% 20%;
+    border-top-right-radius: 60%;
+    border-bottom-right-radius: 10% 20%;
+    border-bottom-left-radius: 60%;
+    box-shadow: 13px 13px 10px -3px #9e9e9e inset,
+        -13px -13px 10px -3px #9e9e9e inset;
+    margin: auto;
+    margin-top: calc(50vh - 50px);
+}

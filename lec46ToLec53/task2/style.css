@@ -1,0 +1,26 @@
+html {
+    font-family: sans-serif;
+}
+.parent {
+    width: 600px;
+    height: 300px;
+    margin: auto;
+    background-color: #EEE;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 10px 0;
+}
+
+.parent div {
+    background-color: #F44336;
+    color: white;
+    font-weight: 700;
+    width: calc((600px - 50px) / 3);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

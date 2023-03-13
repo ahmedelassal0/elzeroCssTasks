@@ -1,0 +1,15 @@
+p:first-child {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: italic;
+}
+
+p:nth-child(2) {
+    font-family: 'Cairo';
+    font-weight: 700;
+}
+
+p:nth-child(3) {
+    font-family: 'Jomhuria';
+    font-weight: 400;
+}

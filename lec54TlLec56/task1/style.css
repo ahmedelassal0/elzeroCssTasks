@@ -1,0 +1,46 @@
+:root {
+    --clr-dark: #DDD;
+    --clr-light: #EEE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 600px;
+    margin: 50px auto;
+    border-left: 10px solid #F44336;
+    border-right: 10px solid #673AB7;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+div::first-letter {
+    color: red;
+
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to right, #F44336 20%, #2196F3 20%, #2196F3 40%, #4CAF50 40%, #4CAF50 60%, #E91E63 60%, #E91E63 80%, #673AB7 80%, #673AB7 100%);
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;    
+    right: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to right, #F44336 20%, #2196F3 20%, #2196F3 40%, #4CAF50 40%, #4CAF50 60%, #E91E63 60%, #E91E63 80%, #673AB7 80%, #673AB7 100%);
+}

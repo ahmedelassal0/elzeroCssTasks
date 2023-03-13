@@ -1,0 +1,23 @@
+.main {
+    padding: 0;
+    width: 400px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.main>li {
+    list-style-type: none;
+    background-color: #EEE;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.main li li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.css li {
+    list-style-type: upper-roman;
+}

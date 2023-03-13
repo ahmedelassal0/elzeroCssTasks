@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container {
+    position: relative;
+    height: 100vh;;
+    perspective: 300px;
+}
+.container div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.container div:hover {
+    transform:translate(-50%, -50%) rotateY(180deg);
+    -webkit-transform:translate(-50%, -50%) rotateY(180deg);
+    -moz-transform:translate(-50%, -50%) rotateY(180deg);
+    -ms-transform:translate(-50%, -50%) rotateY(180deg);
+    -o-transform:translate(-50%, -50%) rotateY(180deg);
+}
+
+.container div::before {
+    content: "Front";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FA3664;
+    z-index: 2;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.container div::after {
+    content: "Back";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1692FC;
+    z-index: 1;
+    /* to show the word in right order (not mirored) */
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}

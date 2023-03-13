@@ -1,0 +1,23 @@
+div {
+    font-family: sans-serif;
+    background-color: #EEE !important;
+    color: transparent !important;
+    width: 400px !important;
+    margin: auto !important;
+    border: none !important;
+    font-size: 20px !important;
+    position: relative;
+}
+
+div:before {
+    content: "Elzero";
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    font-weight: 700;
+}

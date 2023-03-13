@@ -1,0 +1,47 @@
+div {
+    background-color: #EEE;
+    border: 2px solid;
+    border-top-color: #F44336;
+    border-bottom-color: #F44336;
+    border-left-color: #2196F3;
+    border-right-color: #2196F3;
+    margin: 50px auto;
+    font-family: sans-serif;
+    width: 400px;
+    line-height: 2;
+    padding: 14px;
+    position: relative;
+}
+
+div span {
+    position: absolute;
+    background-color: #2196F3;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+div .top-left {
+    top: -15px;
+    left: -15px;
+    text-align: center;
+    border-right: 2px solid #F44336;
+}
+
+div .bottom-left {
+    bottom: -15px;
+    left: -15px;
+    border-right: 2px solid #F44336;
+}
+
+div .top-right {
+    top: -15px;
+    right: -15px;
+    border-left: 2px solid #F44336;
+}
+
+div .bottom-right {
+    bottom: -15px;
+    right: -15px;
+    border-left: 2px solid #F44336;
+}

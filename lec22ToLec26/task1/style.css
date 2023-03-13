@@ -1,0 +1,21 @@
+div:first-child {
+    border: 5px solid #FF5722;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+p:first-child {
+    border: inherit;
+    padding: inherit;
+    text-align: center;
+}
+
+div:nth-child(2) {
+    border: 5px solid #009688;
+    padding: 30px;
+}
+
+p:nth-child(2) {
+    border: inherit;
+    padding: inherit;
+    text-align: center;
+}

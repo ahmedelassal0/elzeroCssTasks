@@ -1,0 +1,41 @@
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+table {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+table thead tr td {
+    background-color: #404040;
+    color: #FFF;
+    font-weight: 700;
+    padding: 10px;
+}
+
+
+table tbody {
+    background: #EEE;
+}
+
+table tbody tr td img {
+    width: 150px;
+}
+
+table tbody tr td .view {
+    background-color: #03A9F4;
+    color: #FFF;
+    border: none; 
+    font-weight: 700;   
+}
+
+table tbody tr td .delete {
+    background-color: #E91E63;
+    color: #FFF;
+    border: none;
+    font-weight: 700;   
+}
